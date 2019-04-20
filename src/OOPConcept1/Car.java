@@ -6,6 +6,10 @@ public class Car {
 	int var;
 	public static void main(String[] args) {
 		
+		Car a = new Car();
+	
+		a.mod = 20;
+		a.var = 2019;
 
 	}
 
