@@ -6,18 +6,20 @@ public class FunctionsInJava {
 	public static void main(String[] args) {
 		
 		//Create a Object to refer the methods created obj is the reference variable.
-		
+		//By creating an obj it will have the control for all the non static methods one which are there below.
 		FunctionsInJava obj = new FunctionsInJava();
-	    obj.division(10, 3);
+		obj.division(10, 3);
 	    
-	    int l = obj.pqr();
+		int l = obj.pqr();
 	    System.out.println(l);
-		
-		
+	    
+	    obj.pqr();
+	    
+	    String A = obj.qa();
+	    System.out.println(A);
 		}
 	
 	//non static methods
-	
 	//Void does not return any value -- No input no Output
 	public void testMethod() {
 		System.out.println("TestMetod");
@@ -35,19 +37,13 @@ public class FunctionsInJava {
 	public String  qa() {
 		System.out.println("QA Method");
 		String S = "Selenium";
-		
 		return S;
 	}
 	
 	//X & Y input arguments 
 	public int  division(int x , int y) {
-		
 		System.out.println("Division");
-		
 		int d = x/y;
 		return d;
-		
+		}
 	}
-	
-	
-}
